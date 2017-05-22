@@ -1,0 +1,39 @@
+<html ng-app="studentApp">
+<head>
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://code.angularjs.org/1.5.8/angular.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0-alpha0/angular-ui-router.js"></script>
+    <script src="controller.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload-shim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/angular.image-appear/1.11.3/ng-image-appear.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-touch/1.6.2/angular-touch.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-carousel/1.0.1/angular-carousel.js"></script>
+      <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/angular-carousel/1.0.1/angular-carousel.min.css">
+
+
+
+<!--         <script src="router.js"></script>
+ -->
+</head>
+
+<body ng-controller="myCtrl">
+
+
+<br>
+	<div class="container">
+		<div class="buttons">
+			<li><a  ui-sref="admin">Admin</a></li>
+	    	<li><a  ui-sref="display">Display</a></li>
+		</div>	
+	</div>	
+
+<div ui-view>
+
+</div>
+</body>
+</html>

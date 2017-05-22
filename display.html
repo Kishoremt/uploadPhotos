@@ -1,0 +1,120 @@
+<!-- <br>
+	<div id='previewImg'></div>   
+<br>
+     -->
+     <br>
+<!--      	<div  ng-repeat="d in data track by $index">
+ -->
+     	<!--convert base64 data to image -->
+  <!--    	 <img data-ng-src="{{d}}"  data-err-src="" ng-image-appear  
+    animation="blurInDown"
+    transition-duration="1s"
+    animation="fillIn"
+    animation-duration="1s"
+    easing="ease-out"/>  -->
+     		
+
+<!-- 	<ul rn-carousel rn-carousel-auto-slide rn-carousel-transition="slide" class="d">
+	  <li ng-repeat="d in data track by $index">
+	    <img data-ng-src="{{d}}"  data-err-src="">
+	  </li>
+	</ul> -->
+
+<style>
+	ul {
+  height: 650px;
+  width: 100%;
+}
+
+ul li img{
+  height: 100%;
+  width: 100%;
+}
+</style>
+
+	<ul rn-carousel rn-carousel-pause-on-hover="" rn-carousel-buffered="" rn-carousel-deep-watch="" rn-carousel-auto-slide="" rn-carousel-duration="2000" rn-carousel-index="carouselIndex" class="image">
+    	
+    	
+	   	<li ng-repeat="slide in data track by $index">
+		    <img src="{{slide}}" ng-image-appear  
+		    animation="blurInDown"
+		    transition-duration="1s"
+		    animation="fillIn"
+		    animation-duration="1s"
+		    easing="ease-out"/>
+	    </li>
+
+  	</ul>
+ <div rn-carousel-indicators ng-if="data" align="center" slides="data" rn-carousel-index="carouselIndex"></div> 
+ 
+
+
+
+<!-- <style>
+
+	 	.design{
+	 		display: inline;
+	 	 		width: 150px;
+	 	 		background-color:
+	 	}
+	 	 .loader-css {
+	        width: 60px; 
+	        height: 60px; 
+	        left: calc((100% - 20px) / 2); 
+	        top: calc((100% - 20px) / 2);
+	    }
+	     .mySlides {
+	     	display:none;
+	    	position: relative;
+		    -webkit-animation: mymove 10s infinite;  /* Safari 4.0 - 8.0 */
+		    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+		    animation: mymove 10s infinite;
+		    animation-fill-mode: forwards;
+	     }
+
+	     @-webkit-keyframes mymove {
+    				from {top: 0px;}
+    				to {top: 200px;}
+    				5% {
+        					-webkit-filter: grayscale(100%); 
+       						/* filter: grayscale(100%);*/
+    					}
+    				5% {opacity:0;}
+    				50% {padding: -50px;}
+    				
+		}	
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 150px;}
+    95% {
+        -webkit-filter: grayscale(100%); 
+        /*filter: grayscale(100%);*/
+   		 }
+     95% {opacity:0;}
+     50% {padding: 50px;}
+}
+</sty
+
+ </style>
+
+<div ng-repeat="d in data track by $index" class="design ">
+         <img data-ng-src="{{d}}" data-err-src="" class="mySlides" width="50%" align="middle" />
+    </div>
+
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script> -->
